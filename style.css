@@ -37,6 +37,7 @@ body {
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 .card {
     display: flex;
