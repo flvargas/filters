@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    background-color: #89c0ff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;    
+    margin: 0;
+}
+
+.menu-filters {
+    display: flex;
+    gap: 15px;
+}
+.menu-filters li {
+    list-style: none;    
+}
+.menu-filters li a {
+    border: 1px solid #000;
+    padding: 10px 15px;
+    color: #000;
+    text-decoration: none;  
+    transition: all 0.3s ease;  
+}
+.menu-filters li a:hover,
+.menu-filters li a.active {
+    background: #000;
+    color: #fff;
+
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 120px;
+    width: 20%;
+    border: 1px solid #000;
+    transition: all 0.3s ease;
+}
