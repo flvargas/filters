@@ -9,10 +9,10 @@ document.querySelectorAll(btnFiltro).forEach(
             let filter = button.dataset.filter;
 
             if (filter != "todos") {
-                document.querySelectorAll('.card').forEach(card => {card.style.display = "none";});
-                document.querySelectorAll('.card[data-filter='+filter+']').forEach(card => {card.style.display = "flex";});
+                document.querySelectorAll('.card').forEach(card => {card.style.opacity = 0;});
+                document.querySelectorAll('.card[data-filter='+filter+']').forEach(card => {card.style.opacity = 1;});
             } else {
-                document.querySelectorAll('.card').forEach(card => {card.style.display = "flex";});
+                document.querySelectorAll('.card').forEach(card => {card.style.opacity = 1;});
             }
         })    
     }
